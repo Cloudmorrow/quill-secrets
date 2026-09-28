@@ -34,7 +34,15 @@ It contains no code: everything above is declared in [`quill.toml`](quill.toml).
 
 ## Working on it
 
-See [CLAUDE.md](CLAUDE.md). In short: `cm quill check`, then `cm quill dev`.
+See [CLAUDE.md](CLAUDE.md) and the skills in `.claude/skills/`. In short:
+
+```
+uv sync                  # .venv with Cloudmorrow and pytest
+cm quill check           # the manifest, as a server would install it
+cm quill test            # tests/, against the real record store and gate
+cm quill test --sandbox  # the same, with the code in the sandbox
+cm quill dev --local     # a throwaway server here, reinstalled as you save
+```
 
 ## Licence
 
