@@ -10,9 +10,11 @@ on the phone, the web app and the terminal.
   terminal).
 - Add a key, change its value, move it to another vault or environment, or
   delete it, from any surface.
-- Importing and exporting `.env` files, and `cm secret run` (a command with
-  an environment's secrets in its environment), stay on the command line:
-  they read and write files on your machine, which is where `cm secret` runs.
+- Import a `.env` file into the environment on screen, or export it as one,
+  from any surface: the web app and the phone upload and download it, the
+  terminal (`m` and `x`) and `cm secret import|export` read and write it on
+  your machine. `cm secret run` (a command with an environment's secrets in
+  its environment) stays on the command line.
 - No assistant ever reaches a secret. The `secret` datamodel is refused to
   every MCP tool, whatever else you let an assistant do.
 
